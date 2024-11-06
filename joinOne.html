@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypta | Join | Page One</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <section class="navItems">
+                <div class="logo">
+                    <img src="images/navLogo2.svg" alt="Crypta small logo" width="150px">
+                </div>
+                <div class="text">
+                    <a href="index.html">Home</a>
+                </div>
+            </section>
+            
+
+        </nav>
+    </header>
+
+    <main>
+
+    <section class="formSection">
+        <form action="/" class="formTemplate" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <section class="personalInformation">
+
+                    <div>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" id="firstName" name="firstName" minlength="2" maxlength="30" placeholder="between 2-30 characters" required>
+                    </div>
+
+
+                    <div>
+                        <label for="middleName">Middle Name: </label>
+                        <input type="text" id="middleName" name="middleName" minlength="2" maxlength="30" placeholder="(optional)">
+                    </div>
+
+
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" maxlength="30" placeholder="up to 30 characters" required>
+                    </div>
+
+
+                    <div>
+                        <label for="email">Email Address: </label>
+                        <input type="text" id="email" name="email" pattern="[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,}" placeholder="ex - johndoe@gmail.com" required>
+                    </div>
+
+
+                    <div>
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" minlength="8" maxlength="30" placeholder="between 8-30 characters" required>
+                    </div>
+
+
+                    <div>
+                        <label for="dateOfBirth">Date of Birth: </label>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+                    </div>
+
+
+                    <div>
+                        <label for="phoneNumber">Phone Number: </label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="^[1-9]+[0-9]*$" placeholder="xxx-xxx-xxxx" maxlength="10" required>
+                    </div>
+
+
+                    <div>
+                        <label for="address">Street Address: </label>
+                        <input type="text" name="address" id="address" autocomplete="street-address" required>
+                    </div>
+
+
+                    <div>
+                        <label for="provinceOrTerritory">Province/Territory: </label>
+                        <select name="provinceOrTerritory" id="provinceOrTerritory" required>
+                            <option value="" disabled selected>Provinces:</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="" disabled>Territories:</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="YT">Yukon</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label for="postalCode">Postal Code: </label>
+                        <input type="text" id="postalCode" name="postalCode" maxlength="6" pattern="^[A-Za-z]\d[A-Za-z]\d[A-Za-z]\d$" placeholder="ex -T4E5T3" required>
+                    </div>
+                </section>
+
+                <section class="personalInformation">
+                    <div>
+                        <label for="incomeLevel">Income Level: </label>
+                        <input type="range" id="incomeLevel" name="incomeLevel" required min="0" max="250000" step="10000" value="0" required>
+                        <output for="incomeLevel" id="incomeNumber">0</output>
+                    </div>
+
+
+                    <div>
+                        <label for="investmentExperience">Years of Experience:</label>
+                        <input type="range" name="investmentExperience" id="investmentExperience" required min="0" max="25" value="0">
+                        <output for="investmentExperience" id="yearsNumber">0</output>
+                    </div>
+
+
+                    <div>
+                        <span>Risk Tolerance:</span>
+                    </div>
+                    <div class="riskRadio">
+                        <div class="radioLow">
+                            <label for="low">Low</label>
+                            <input type="radio" name="riskTolerance" id="low" value="low" required>
+                        </div>
+                        <div class="radioMedium">
+                            <label for="medium">Medium</label>
+                            <input type="radio" name="riskTolerance" id="medium" value="medium" required>
+                        </div>
+                        <div class="radioHigh">
+                            <label for="high">High</label>
+                            <input type="radio" name="riskTolerance" id="high" value="high" required>
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <span>Investment Goals:</span>
+                    </div>
+                    <div class="checkboxGoals">
+                        <div class="goalOne">
+                            <label for="savingForRetirement">Saving for Retirement</label>
+                            <input type="checkbox" name="goalOption" id="savingForRetirement" value="savingForRetirement">
+                        </div>
+
+                        <div class="goalTwo">
+                            <label for="buildingWealth">Building Wealth</label>
+                            <input type="checkbox" name="goalOption" id="buildingWealth" value="buildingWealth">
+                        </div>
+
+                        <div class="goalThree">
+                            <label for="achievingSpecificMilestones">Achieving Milestones</label>
+                            <input type="checkbox" name="goalOption" id="achievingSpecificMilestones" value="achievingSpecificMilestones">
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>Bank Information:</span>
+                    </div>
+                    <div>
+                        <label for="creditCardNumber">Transit Number:</label>
+                        <input type="tel" id="creditCardNumber" name="creditCardNumber" placeholder="xxxxx" minlength="5" maxlength="5" pattern="^[1-9]+[0-9]*$" required>
+                    </div>
+
+
+                    <div>
+                        <label for="expireDate">Institution Number: </label>
+                        <input type="tel" id="expireDate" name="expireDate" placeholder="xxx" minlength="3" maxlength="3" pattern="^[1-9]+[0-9]*$" required>
+                    </div>
+
+
+                    <div>
+                        <label for="ccv">Account Number: </label>
+                        <input type="tel" id="ccv" name="ccv" placeholder="7-12 digits" minlength="7" maxlength="12" pattern="^[1-9]+[0-9]*$" required>
+                    </div>
+
+
+                    <div>
+                        <label for="checkbox">I agree to Crypta's TOS:  </label>
+                        <input type="checkbox" id="checkbox" name="checkbox" required>
+                    </div>
+
+                </section>
+
+                <div class="nextPage">
+                    <input id="nextButton" type="submit" value="Sign Up">
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <section class="footerGrid footerStyle">
+            <a href=""><p>Contact Us</p></a>
+            <a href=""><p>Pricacy Information</p></a>
+            <a href=""><p>Terms and Conditions</p></a>
+        </section>
+    </footer>
+
+</body>
+</html>

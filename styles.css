@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    max-width: 3200px;
+}
+
+nav {
+    background-color: #33845B;
+    padding: 1rem;
+}
+
+nav a {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #0a1912;
+}
+
+.navItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Hero Section */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 6rem 0;
+}
+
+.heroText {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+
+}
+
+.heroText h1 {
+    font-size: 4rem;
+    color: #0a1912;
+    min-width: 395px;
+}
+
+.heroText p {
+    font-size: 1.2rem;
+}
+
+.heroImage {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+
+}
+
+.heroImage img {
+    width: 100%;
+    height: auto;
+}
+
+/* signUp Section */
+
+#signUp {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+.signUpText h2 {
+    font-size: 2rem;
+}
+
+.signUpLink {
+    background-color: #f95919;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: #0a1912 solid 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 2px 2px #0a1912;
+
+}
+
+.signUpLink:hover {
+    color: #0a1912;
+}
+
+.signUpButton {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+/* Discover Section */
+
+#discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2rem 1fr;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+}
+
+.discoverTitle {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0 4rem;
+}
+
+.discoverTitle h2 {
+    font-size: 2rem;
+}
+
+.discoverOne {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0 1rem;
+}
+
+.discoverTwo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.discoverThree {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.discoverOne, .discoverTwo, .discoverThree {
+    margin: 4rem;
+}
+
+.discoverThree div {
+    align-items: center;
+}
+
+.icons {
+    margin-top: 2rem;
+}
+
+/* Footer Section */
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #33845B;
+    padding: 3rem;
+    text-align: center;
+}
+
+.footerGrid a {
+    text-decoration: none;
+}
+
+.footerGrid p {
+    color: #ffffff;
+}
+
+.footerStyle {
+    margin-top: 10rem;
+}
+
+
+/* Form Page One */
+
+
+
+.formTemplate {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+form {
+    font-weight: 500;
+}
+
+legend {
+    border: 3px solid #33845B;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+fieldset {
+    border-radius: 10px;
+    border: 3px solid #33845B;
+}
+
+form div {
+    margin: 1rem 0;
+    display: flex;
+
+}
+
+form div label {
+    min-width: 20ch;
+}
+
+form input {
+    width: 30ch;
+    cursor: pointer;
+}
+
+.personalInformation {
+    display: flex;
+    flex-direction: column;
+}
+
+.nextPage {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+.nextPage input {
+    padding: 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #33845B;
+    color: #ffffff;
+    border: 2px solid #0a1912;
+}
+
+.nextPage input:hover {
+    background-color: #f95919;
+}
+
+.riskRadio {
+    display: inline;
+    margin: 0 auto;
+}
+
+.riskRadio input {
+    margin: 0 2rem;
+}
+
+.checkboxGoals {
+    display: inline;
+    margin: 0 auto;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1010px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 0;
+    }
+
+    .heroText {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: start;
+    }
+
+    .heroImage {
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+
+    .heroImage img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
+        margin-top: 2rem;
+    }
+
+    .discoverTitle {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .discoverOne {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .discoverTwo {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .discoverThree {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .navItems {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text a {
+        margin: 1rem;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+}
+
+
+
+/* valid css */
+
+input:invalid {
+    border: 2px solid red;
+
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+
+
